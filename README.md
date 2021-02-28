@@ -19,7 +19,7 @@ spec:
   version: v1
 ```
 
-2. Create doc.go  
+2. Create doc.go    
 ```pkg/apis/extensions.example.com/v1/doc.go```
 ```go
 // +k8s:deepcopy-gen=package,register
@@ -29,7 +29,7 @@ spec:
 package v1
 ```
 
-3. Create register.go for group name 
+3. Create register.go for group name     
 ```pkg/apis/extensions.example.com/register.go```  
 ```go
 package extensions_example_com
@@ -38,7 +38,7 @@ const (
 )
 ```
 
-4. Create types.go for your crd
+4. Create types.go for your crd   
 ```pkg/apis/extensions.example.com/v1/types.go```
 ```go
 package v1
